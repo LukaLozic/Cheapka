@@ -8,6 +8,9 @@ public class CheapkaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CheapkaApplication.class, args);
+
+        System.out.println("develop");
+
     }
 
 }
