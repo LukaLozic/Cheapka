@@ -1,4 +1,4 @@
-package com.llit.cheapka;
+package com.llit;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
