@@ -1,0 +1,14 @@
+package com.llit.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CheapkaController {
+    @GetMapping("/hello")
+    public String getData() {
+
+        return "test";
+    }
+}
