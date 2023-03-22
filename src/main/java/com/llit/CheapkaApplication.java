@@ -1,16 +1,18 @@
-package com.llit;
+ package com.llit;
 
+import com.llit.config.ldap.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
+
+import java.util.List;
 
 @SpringBootApplication
 public class CheapkaApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(CheapkaApplication.class);
+        SpringApplication.run(CheapkaApplication.class, args);
+
     }
 
 }
