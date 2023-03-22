@@ -31,9 +31,9 @@ public class SecurityConfig {
         auth
                 .ldapAuthentication()
                 .userDnPatterns("uid={0},ou=people")
-                .groupSearchBase("ou=groups")
+                .groupSearchBase("ou=people")
                 .contextSource()
-                .url("ldap://localhost:8389/dc=springframework,dc=org")
+                .url("ldap://localhost:123/dc=asb,dc=com")
                 .and()
                 .passwordCompare()
                 .passwordEncoder(new BCryptPasswordEncoder())
