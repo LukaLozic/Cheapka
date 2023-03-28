@@ -1,0 +1,44 @@
+dn: dc=asb,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: asb
+
+dn: ou=people,dc=asb,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=anne,ou=people,dc=asb,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Anne Hathaway
+sn: Hathaway
+uid: anne
+description: Pretty Girl :-)
+userPassword: anne
+
+
+dn: uid=ben,ou=people,dc=asb,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: John Hamilton
+sn: Hamilton
+uid: ben
+description: Cool guy!!
+email: probni@hotmail.com
+userPassword: $2a$10$c6bSeWPhg06xB1lvmaWNNe4NROmZiSpYhlocU/98HNr2MhIOiSt36
+
+dn: uid=asb,ou=people,dc=asb,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: ASB Notebook
+sn: Notebook
+uid: asbnotebook
+description: Technical blog!.
