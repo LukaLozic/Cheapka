@@ -38,7 +38,7 @@ dn: uid=ben,ou=people,dc=springframework,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
-objectclass: inetOrgPerson
+    objectclass: inetOrgPerson
 cn: Ben Alex
 sn: Alex
 uid: ben
