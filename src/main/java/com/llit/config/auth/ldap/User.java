@@ -12,6 +12,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.naming.Name;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class User implements UserDetails {
     private @DnAttribute(value = "uid", index = 3) String uid;
     private @Attribute(name = "cn") String fullName;
     private @Attribute(name = "sn") String lastName;
-    private @Attribute(name = "userPassword")String password;
+    private @Attribute(name = "userPassword")byte[] password;
     //private Role role;
 
 
@@ -62,10 +64,6 @@ public class User implements UserDetails {
         this.lastName = lastName;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     @Override
     public String toString() {
         return "User{" +
@@ -84,7 +82,7 @@ public class User implements UserDetails {
 
     @Override
     public String getPassword() {
-        return password;
+        return new String(this.password);
     }
 
     @Override
